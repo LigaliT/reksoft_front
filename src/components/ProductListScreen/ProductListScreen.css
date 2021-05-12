@@ -1,0 +1,40 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.row.center {
+    justify-content: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table tbody tr:nth-of-type(odd) {
+    background-color: #f4f4f4;
+}
+.table td,
+.table th {
+    text-align: left;
+    border: 0.1rem solid #e4e4e4;
+    padding: 0.5rem;
+}
+.table button {
+    margin: 0 0.2rem;
+}
+
+.pagination a {
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem #a4a4a4 solid;
+    font-size: 1.6rem;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.pagination a.active {
+    font-weight: bold;
+}
